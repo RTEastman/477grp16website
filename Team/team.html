@@ -1,0 +1,127 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!--
+Name: Boilerplate
+Version: v1.3
+Last Updated: 4/24/2013
+Author: George Hadley
+License: Released for free under a Creative Commons Attribution 2.5 License
+
+This website was based upon a number of source materials, which are elaborated upon in credits.txt
+
+-->
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+<!--Reconfigurable base tag; used to modify the site root location for root-relative links-->
+<!-- Python SimpleHTTPServer Testing -->
+<!--<base href="/http://localhost:8000/" />-->
+<!-- ECE477 preview URL -->
+<!--<base href="/https://engineering.purdue.edu/ece477/preview/" />-->
+<!-- ECE477 final URL -->
+<!--<base href="/https://engineering.purdue.edu/ece477/" />-->
+<base href="C:/Users/eastt/Desktop/StudentWebTemplate/"/>
+
+<!--Content-->
+<title>ECE477 Homepage</title>
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<meta name="author" content="George Hadley">
+<meta name = "format-detection" content = "telephone=no" />
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+
+<!--CSS-->
+<link rel="stylesheet" href="css/default.css" type="text/css" media="all" />
+<link rel="stylesheet" href="css/responsive.css">
+<link rel="stylesheet" href="css/styles.css">
+<link rel="stylesheet" href="css/content.css">
+<!--[if IE 6]>
+<link href="/default_ie6.css" rel="stylesheet" type="text/css" />
+<![endif]-->
+
+</head>
+<body>
+<div id="wrapper_site">
+    <div id="wrapper_page">
+		<!-- Instantiate global site header.-->
+		<div id="header"></div>
+			<div id="wrapper">
+				<div id="header">
+					<div id="logo">
+						<h2><a href="#">Digital Systems Senior Design</a></h2>
+						<h4><a href="#">ECE477 Team x</a></h4>
+					</div>
+				</div>
+			</div>
+		<!-- Instantiate site global navigation bar.-->
+		
+		<div id="menu">
+			<div class="container">
+			<div class="navbar navbar_ clearfix">
+				<div class="navbar-inner">      
+				<div class="clearfix">
+					<div class="nav-collapse nav-collapse_ collapse">
+					<ul class="nav sf-menu clearfix sf-js-enabled">
+						<li class="active"><a href="index.html">Home</a></li> 
+						<li><a href="Team/team.html">Team</a></li>
+						<li class="sub-menu"><a href="Files/documents.html" class="sf-with-ul">Documents<b class="sf-sub-indicator"></b></a>
+							<ul class="submenu" style="display: none;">
+								<li><a href="Files/documents.html">Documents</a></li>
+								<li><a href="Files/references.html">References</a></li>
+							</ul>
+						</li> 
+						<li><a href="https://github.com">Source</a></li>
+						<li><a href="Media/media.html">Media</a></li>
+						<li class="sub-menu"><a href="Contact/contact.html" class="sf-with-ul">Contact<b class="sf-sub-indicator"></b></a>
+							<ul class="submenu" style="display: none;">
+								<li><a href="mailto:cao216@purdue.edu?subject=[ECE477]">Jason Cao</a></li>
+								<li><a href="mailto:wang4166@purdue.edu?subject=[ECE477]">Zicong Wang</a></li>
+								<li><a href="mailto:jshader@purdue.edu?subject=[ECE477]">Jonah Shader</a></li>
+								<li><a href="mailto:reastman@purdue.edu?subject=[ECE477]">Ryan Eastman</a></li>                      
+							</ul>
+						</li>
+						<li class="last"><a href="https://engineering.purdue.edu/ece477">ECE477</a></li>
+					</ul>
+					</div>                                                                                                                
+				</div>
+				</div>  
+			</div>
+			</div>
+		</div>
+		<!-- Instantiate slideshow module. All slideshow images should be 1100px x 500px and stored in ./img/slideshow-->
+		<div id="slideshow"></div>
+		<!-- Instantiate main page content. All page content should be added to about.html -->
+		<div id="content">
+			<h2>ECE477 Team Members:</h2>
+			<!--Your team member information is instantiated here. To edit your information, please edit your team member html file, located in this directory. Instantiate your staff information using the examples below.-->
+			<div id="member1"></div>
+			<h2 ><a href="Team/member1.html">Jason Cao</a></h2>
+			<div id="member2"></div>
+			<h2 ><a href="Team/member2.html">Zicong Wang</a></h2>
+			<div id="member3"></div>
+			<h2 ><a href="Team/member3.html">Jonah Shader</a></h2>
+			<div id="member4"></div>
+			<h2 ><a href="Team/member4.html">Ryan Eastman</a></h2>
+		</div>
+		<!-- Instantiate global footer. Any changes to the footer should be made through the top-level file "footer.html" -->
+		<div id="footer"></div>
+	</div>
+</div>
+
+<!--JS-->
+<script src="js/jquery.js"></script>
+<script src="js/jquery-migrate-1.1.1.js"></script>
+
+
+<script type="text/javascript">
+$(document).ready(function() {
+    $("#header").load("header.html");
+	$("#menu").load("navbar.html");
+	$("#slideshow").load("slideshow.html");
+	//$("#content").load("about.html");
+	$("#footer").load("footer.html");
+});
+</script>
+
+</body>
+</html>

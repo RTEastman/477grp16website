@@ -1,0 +1,116 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!--
+Name: Boilerplate
+Version: v1.0
+Last Updated: 12/17/2013
+Author: George Hadley
+License: Released for free under a Creative Commons Attribution 2.5 License
+
+This website was based upon a number of source materials, which are elaborated upon in credits.txt
+
+-->
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+<!--Reconfigurable base tag; used to modify the site root location for root-relative links-->
+<!-- Python SimpleHTTPServer Testing -->
+<!--<base href="http://localhost:8000/" />-->
+<!-- ECE477 preview URL -->
+<!--<base href="https://engineering.purdue.edu/ece477/preview/" />-->
+<!-- ECE477 final URL -->
+<!--base href="https://engineering.purdue.edu/ece477/StudentWebTemplate/" /-->
+<base href="C:/Users/eastt/Desktop/StudentWebTemplate/"/>
+
+<!--Content-->
+<title>ECE477 Course Documents</title>
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<meta name="author" content="George Hadley">
+<meta name = "format-detection" content = "telephone=no" />
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+
+<!--CSS-->
+<link rel="stylesheet" href="css/default.css" type="text/css" media="all" />
+<link rel="stylesheet" href="css/responsive.css">
+<link rel="stylesheet" href="css/styles.css">
+<link rel="stylesheet" href="css/content.css">
+<!--[if IE 6]>
+<link href="default_ie6.css" rel="stylesheet" type="text/css" />
+<![endif]-->
+
+</head>
+<body>
+<div id="wrapper_site">
+    <div id="wrapper_page">
+	<!-- Instantiate global site header.-->
+	<div id="header"></div>
+		<!-- Instantiate site global navigation bar.-->
+		<div id="menu"></div>
+		<div class="container">
+			<div class="navbar navbar_ clearfix">
+				<div class="navbar-inner">      
+				<div class="clearfix">
+					<div class="nav-collapse nav-collapse_ collapse">
+					<ul class="nav sf-menu clearfix sf-js-enabled">
+						<li class="active"><a href="index.html">Home</a></li> 
+						<li><a href="Team/team.html">Team</a></li>
+						<li class="sub-menu"><a href="Files/documents.html" class="sf-with-ul">Documents<b class="sf-sub-indicator"></b></a>
+							<ul class="submenu" style="">
+								<li><a href="Files/documents.html">Documents</a></li>
+								<li><a href="Files/references.html">References</a></li>
+							</ul>
+						</li> 
+						<li><a href="https://github.com">Source</a></li>
+						<li><a href="Media/media.html">Media</a></li>
+						<li class="sub-menu"><a href="Contact/contact.html" class="sf-with-ul">Contact<b class="sf-sub-indicator"></b></a>
+							<ul class="submenu" style="display: none;">
+								<li><a href="mailto:student1@purdue.edu?subject=[ECE477]">Student1</a></li>
+								<li><a href="mailto:student2@purdue.edu?subject=[ECE477]">Student2</a></li>
+								<li><a href="mailto:student2@purdue.edu?subject=[ECE477]">Student3</a></li>
+								<li><a href="mailto:student2@purdue.edu?subject=[ECE477]">Student4</a></li>                      
+							</ul>
+						</li>
+						<li class="last"><a href="https://engineering.purdue.edu/ece477">ECE477</a></li>
+					</ul>
+					</div>                                                                                                                
+				</div>
+				</div>  
+			</div>
+			</div>
+	
+		<!-- Instantiate a page banner image. Page banner images should be 1100x350px and should be located within the local
+			img folder located at this directory level. -->
+		<div id="banner">
+			<img src="Media/img/BannerImgExample.jpg"></img>
+		</div>
+	
+		<!-- Instantiate "tools" needed for a page. Tools are premade functional blocks that can be used to build a page,
+			and include things such as a file lister (for listing out homework assignments or tutorials)
+		-->
+		<div id="content">
+			<!-- Homework assignments are listed out here -->
+			<h2>Project Videos:</h2>
+			    Showcase some of your project videos here
+			<h2>Project Photos:</h2>
+                Showcase some of your project photos here
+		</div>
+	
+		<!-- Instantiate global footer. Any changes to the footer should be made through the top-level file "footer.html" -->
+		<div id="footer"></div>
+    </div>
+</div>
+
+<!--JS-->
+<script src="js/jquery.js"></script>
+<script src="js/jquery-migrate-1.1.1.js"></script>
+
+<script type="text/javascript">
+$(document).ready(function() {
+    $("#header").load("header.html");
+	$("#menu").load("navbar.html");
+	$("#footer").load("footer.html");
+});
+</script>
+</body>
+</html>
