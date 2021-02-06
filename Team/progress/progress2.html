@@ -39,12 +39,44 @@ contact course staff.
 	<!-- Instantiate global site header.-->
 	<div id="header"></div>
 		<!-- Instantiate site global navigation bar.-->
-		<div id="menu"></div>
+		<div id="menu">
+			<div class="container">
+			<div class="navbar navbar_ clearfix">
+				<div class="navbar-inner">      
+				<div class="clearfix">
+					<div class="nav-collapse nav-collapse_ collapse">
+					<ul class="nav sf-menu clearfix sf-js-enabled">
+						<li class="active"><a href="index.html">Home</a></li> 
+						<li><a href="Team/team.html">Team</a></li>
+						<li class="sub-menu"><a href="Files/documents.html" class="sf-with-ul">Documents<b class="sf-sub-indicator"></b></a>
+							<ul class="submenu" style="display: none;">
+								<li><a href="Files/documents.html">Documents</a></li>
+								<li><a href="Files/references.html">References</a></li>
+							</ul>
+						</li> 
+						<li><a href="https://github.com">Source</a></li>
+						<li><a href="Media/media.html">Media</a></li>
+						<li class="sub-menu"><a href="Contact/contact.html" class="sf-with-ul">Contact<b class="sf-sub-indicator"></b></a>
+							<ul class="submenu" style="display: none;">
+								<li><a href="mailto:cao216@purdue.edu?subject=[ECE477]">Jason Cao</a></li>
+								<li><a href="mailto:wang4166@purdue.edu?subject=[ECE477]">Zicong Wang</a></li>
+								<li><a href="mailto:jshader@purdue.edu?subject=[ECE477]">Jonah Shader</a></li>
+								<li><a href="mailto:reastman@purdue.edu?subject=[ECE477]">Ryan Eastman</a></li>                      
+							</ul>
+						</li>
+						<li class="last"><a href="https://engineering.purdue.edu/ece477">ECE477</a></li>
+					</ul>
+					</div>                                                                                                                
+				</div>
+				</div>  
+			</div>
+			</div>
+		</div>
 	
 		<!-- Instantiate a page banner image. Page banner images should be 1100x350px and should be located within the local
 			img folder located at this directory level. -->
 		<div id="banner">
-			<img src="Team/img/group.jpg"></img>
+			<img src="Files/img/BannerImgExample.jpg"></img>
 		</div>
 	
 		<!-- Instantiate "tools" needed for a page. Tools are premade functional blocks that can be used to build a page,
@@ -71,8 +103,20 @@ contact course staff.
 			budget and corrected Homework assignment responsibilities. Revised PSSC
 			by adding multiple components that our microcontroller interface with, such as
 			motor driver, barcode scanner, etc. Viewed lecture 
-			videos and completed participation quizzes.</br>
+			videos and completed participation quizzes</br>
                       
+			<br>
+			<h4>Week 3:</h4>
+			<b>Date:</b> 2/4/2021<br>
+            <b>Total hours:</b> 5<br>
+            <b>Description of design efforts:</b><br>
+			1. Clarified on prototype design, raised a new sorting functionality by adding another angel to each servo-controlled flaps, allowing for three more sorting destinations. This solution is 
+				viable but adds unnecessary challenges to overcome, and thus will only be considered after minimal prototype is done.</br>
+			<br>2. Researched on working of barcode scanner, modulo check character formula, barcode types,etc, and wrote overview of how the barcode scanner interacts with the MCU. </br>
+			<br>3. Collaborated with team to finalize component choices such as motors and conveyor belts in future purchases.</br>
+			<img src="Team/progress/img/sketch.jpg" alt="sketch" width="300" height="400">
+			<img src="Team/progress/img/barcode.PNG" alt="barcode concepts" width="250" height="200">
+			</br>
         </div>
 	
 		<!-- Instantiate global footer. Any changes to the footer should be made through the top-level file "footer.html" -->
