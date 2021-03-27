@@ -211,7 +211,29 @@ contact course staff.
 			</br>
 			<img src="Team/img/test_scan.PNG" width="200" height="300">
 			<img src="Team/img/conv_part.jpg" width="200" height="300">
+			
+			<br>
+			<h4>Week 10:</h4>
+			<b>Date:</b> 3/26/2021<br>
+            <b>Total hours:</b> 6<br>
+            <b>Description of design efforts:</b><br>
+			Read more into barcode scanner module user manual in both code and settings portion in detail. Hooked up the barcode scanner
+			to the STM32 microcontroller with respect to the PCB design assignemnts to configure PA 10 for RX on MCU and PA9 for transmit on MCU, in order 
+			to prepare for burning the program to test for in the future. Referenced manual on safe operating voltage and current regulation 
+			and calculated required resistances accordingly, these resistances will be incorperated into the circuit based on the PCB design Jonah made as well.
+			Also started on the coding portion including configuring the baud rate of the microcontroller to fit the default setting of the barcode scanner at 
+			9600 bps. The barcode scanner module has the functionality of changing baud rate by scanning setting qr codes but we don't want that at runtime.
+			Will be writing more code on FIFO buffer that takes in UART inputs and figuring out how to extract the barcode number/information passed into the buffer.
+			</br>
+			
+			
+			</br>
+			<img src="Team/img/bc.jpg" width="200" height="300">
+			<img src="Team/img/ca.PNG" width="200" height="300">
+			<img src="Team/img/brr.jpg" width="200" height="300">
         </div>
+		
+		
 	
 		<!-- Instantiate global footer. Any changes to the footer should be made through the top-level file "footer.html" -->
 		<div id="footer"></div>
