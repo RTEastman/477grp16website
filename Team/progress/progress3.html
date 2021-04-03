@@ -166,6 +166,21 @@ contact course staff.
 			<br>
 			<b>Figure 10: Physical PCB Fit Test</b>
 			<br>
+			<h4>Week 11:</h4>
+			<b>Date:</b> 4/2/21<br>
+			<b>Total hours:</b> 14<br>
+			<b>Description of design efforts:</b>
+			I started this week by soldering some of the through-hole components on my PCB (I would have started on the SMDs, but I didn't have any flux and I wanted to make progress). After I soldered the female headers onto the board, my soldering iron basically broke, so I stopped. 
+			Seperately, during Wednesdays meeting, Todd expressed some concerns about how we were going about PSSC #3: The ability to interface with a motor driver. We decided that the best course of action was to try a "man-in-the-middle" atttack between the Ai2 and the rollers to figure out what kinda signals are responsible for driving the motor and to see if we can replicate them.
+			In a flash of divine wisdom, I realized that I could just contact the company (Pulseroller) and ask for that information directly. After getting in contact with a sales assosciate, I learned that 3 of the 4 roller pins are directly connected to the 3 phases of the BLDC motor, with the 4th pin being some super top-secret, 1-wire, patented technology that has the hall data "and other stuff" from an chip inside the roller.
+			Armed with this newfound knowledge, I went to Todd's office hours to discuss a new course of action. We agreed that the easiest thing to do would be to just use a sensorless BLDC ESC to drive the rollers. Once I learned how expensive a good sensorless ESC was, I had Jason email Joe to see if there were any ESCs we could borrow.
+			Then, this morning, one of the Engineers from Pulseroller emailed me advising against using a sensorless ESC, saying that it would have a weaker starting torque. He offered to help us in figuring out how we can interface with the Ai2 from the MCU, so I sent him a brief description of what we are trying to do and a summary of our constraints. 
+			I plan to explore both routes simultaneously to ensure project success, provided whatever Pulseroller's solution is realistic. My next steps depend on the pending responses from Joe and Pulseroller.
+            <br>
+			<img src="Team/img/PCB_headers.jpg" width="650"></img>
+			<br>
+			<b>Figure 11: Physical PCB with Soldered Headers</b>
+			<br>
         </div>
 	
 		<!-- Instantiate global footer. Any changes to the footer should be made through the top-level file "footer.html" -->
