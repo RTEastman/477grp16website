@@ -156,6 +156,24 @@ contact course staff.
 		<img src= "Team/img/code figure.jpg" width ="500"></img>
 		<figcaption>Figure 1.7  A figure of how the STM32 code will operate in this project.</figcaption>
 		</figure>
+		<h4>Week 11:</h4>
+		    <b>Date:</b> 4/2/2021<br>
+		    <b>Total hours:</b> 7<br>
+		    <b>Description of design efforts:</b><br>
+		    We are in the process of obtaining a new ESC.  We have recently found out the the PLC controller on the conveyor belt has very limited capability in terms of external interfacing, 
+			which is understandable as this was meant to be used in a commercial setting assuming the clientele does not have in-depth knowledge on how to program firmware for PLC controllers.  
+			Going forward, our plan is to try and interface with the conveyor motors directly using an ESC and our STM microcontrollers.  As I stated in my previous progress report, I will be 
+			be responsible for controlling the servo motors on the sorting mechanism, and taking information from the barcode sensor.  I have started building up the system for bit-masking from the
+			RDR, which will hold the barcode sensor data.  The code progress has been slow because I have been encountering difficulty trying to recall some of the critical registers that need to be set.  I eventually
+			had to scrap most of it because it generated a lot of errors, and I do not have all of the components to test my code.  I should have time in the coming week to come to office hours should the need arise.  I have included screenshots of what happened after I deleted large chunks of code.  Over the weekend, Zi will be sending me his code, and 
+			I will be rebuilding my code and integrating his code into the code base.</br>
+		<figure>
+		<img src= "Team/img/code_evol1a.JPG" width ="500"></img>
+		<img src= "Team/img/code_evol1b.JPG" width ="500"></img>
+		<img src= "Team/img/code_evol2.JPG" width ="500"></img>
+		<img src= "Team/img/code_evol3.JPG" width ="500"></img>
+		<figcaption>Figure 1.8  The code I generated post mass destruction.</figcaption>
+		</figure>
 		</div>
 	
 		<!-- Instantiate global footer. Any changes to the footer should be made through the top-level file "footer.html" -->
