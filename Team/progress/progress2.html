@@ -231,6 +231,56 @@ contact course staff.
 			<img src="Team/img/bc.jpg" width="200" height="300">
 			<img src="Team/img/ca.PNG" width="200" height="300">
 			<img src="Team/img/brr.jpg" width="200" height="300">
+			
+			<br>
+			<h4>Week 11:</h4>
+			<b>Date:</b> 4/2/2021<br>
+            <b>Total hours:</b> 30+<br>
+            <b>Description of design efforts:</b><br>
+			Hardware wise: went to office hour and ECE shop at 162 to obtain bigger breadboards with screws at the top. This was necessary because we need a higher 
+			current input while operating at 135-138mA than the current solely capable of being provided by the STM32 microcontroller. Assembled the whole circuit altogether to
+			be ready for burning UART program onto the STM32 microcontrollerObtained more resistors to protect the 
+			circuit especially the barcode scanner because we only have one at the moment. 
+			Made a mistake of reversing the power supply polars while plugging it in, but quickly
+			disconnected and resolved the issue and luckily there were no damages to any of the components so that we could continue testing. 
+			Software wise: dived deep into Lab10 of ECE362 which was concerning UART, and added some necessary components such as UART header file and C file, that 
+			are also being used in the main function. The main function was replaced by a continuous run of UART received characters being put into a buffer, so that
+			we can have the following sorting algorithm to decide compartment based on the barcode that we scanned. During this week, tremendous amount of hours were spent on software because
+			we need to have this done for there is not too much time left for the whole project. Most hours were spent on looking for external libraries such as STM32_hal library on Github
+			and looking at how other people implement UART interfacing, as well as looking into previous lab codes for UART interfacing. There were not too much information in ECE362 other 
+			than what each function does so I had to dig into the call heiarchy
+			of the system and the order of each function taking place before realizing the routine in 362 does not have to be our routine in this project. Eventually looked into standard peripheral 
+			drivers and implemented UART functions accordingly. Also had issue with not being able to receive and read characters in the RDR register of the STM32, which was debugged and resolved it by 
+			fixing it to another project folder with few more drivers, and removing debugging breakpoints, allowing it to read continuously instead of only reading the first scan, thus finally
+			receiving the correct data from the barcode scanner, and able to continue with rest of the design.
+			</br>
+			
+			
+			</br>
+			<img src="Team/img/b1.JPG" width="200" height="300">
+			<img src="Team/img/b3.PNG" width="400" height="300">
+			<img src="Team/img/b2.JPG" width="200" height="300">
+			
+			<br>
+			<h4>Week 12:</h4>
+			<b>Date:</b> 4/9/2021<br>
+            <b>Total hours:</b> 3<br>
+            <b>Description of design efforts:</b><br>
+			Mostly looking over the core software design of our project that was first brought out last week. Looked more into HAL drivers (fig.1) just to understand how another
+			library might just work as well as our current design. Will be generating more barcodes at this week's 
+			weekly meeting (fig.2) where majority of our software and hardware design testing will take place. For the software UART communication side, this will mean
+			that we will be using the barcode scanner to scan various sorts of barcode, and writing test code such that some LED will light up to prove that we have 
+			received the expected barcode, in order to validate the preciseness of the communication and receiving of data. Moreover, there will be more assembling of the 
+			whole conveyor belt system with the flaps, guide rails, servo motors and DC motor that we will also be testing on in the group meeting.
+			</br>
+			
+			
+			</br>
+			<img src="Team/img/c1.PNG" width="300" height="300">
+			<img src="Team/img/c2.PNG" width="300" height="300">
+			<br>fig. 1     &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp  
+			&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+			&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspfig.2</br>
         </div>
 		
 		
