@@ -174,6 +174,22 @@ contact course staff.
 		<img src= "Team/img/code_evol3.JPG" width ="500"></img>
 		<figcaption>Figure 1.8  The code I generated post mass destruction.</figcaption>
 		</figure>
+		<h4>Week 12:</h4>
+		    <b>Date:</b> 4/9/2021<br>
+		    <b>Total hours:</b> 13<br>
+		    <b>Description of design efforts:</b><br>
+		    We just received a new ESC for the conveyor.  I have done some experimenting on my own the barcode scanner in order to get better acquainted with it as I have not had a chance to work with it until this week.
+			I have started building up my integration for the code with Zi's original work.  I have created a new linked list structure to store the
+			barcode information.  Originally, I had the idea to store the barcode in the form of a char C array, but I realize that I may need to set up more code in case memory on the STM32 becomes a problem due to character arrays in the struct.
+			Along the way, there have been a few errors I encountered with pointers and structs, but these have mostly been resolved.  One thing that I am still trying to figure out is a simple workaround for "printf" as I do not believe this is supported.  
+			One idea that came up was when I did the ECE 362 project and last few assignments, we used Tera Term to output text.  I might consider implementing that or something similar to this.</br>
+		<figure>
+		<img src= "Team/img/jason_screencaps/header_file1.JPG" width ="500"></img>
+		<img src= "Team/img/jason_screencaps/main_file1.JPG" width ="500"></img>
+		<img src= "Team/img/jason_screencaps/main_file1b.JPG" width ="500"></img>
+		<img src= "Team/img/jason_screencaps/main_file1c.JPG" width ="500"></img>
+		<figcaption>Figure 1.9 Some screenshots of the code I generated during this week. In the bottom-most image, there is some code that has been added for the storing of barcode information into a linked list.</figcaption>
+		</figure>
 		</div>
 	
 		<!-- Instantiate global footer. Any changes to the footer should be made through the top-level file "footer.html" -->
