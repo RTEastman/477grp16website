@@ -181,6 +181,20 @@ contact course staff.
 			<br>
 			<b>Figure 11: Physical PCB with Soldered Headers</b>
 			<br>
+			<h4>Week 12:</h4>
+			<b>Date:</b> 4/9/21<br>
+			<b>Total hours:</b> 12<br>
+			<b>Description of design efforts:</b>
+			I started this week by ensuring that we could controll the servos using level-shifted PWMs originating from the MCU. I succeeded and recorded a video of myself demonstrating said success, which can be found onn our Media page.
+			I noticed that the PWM resolution I selected only allowed for roughly 10 discrete servo positions, meaning you could only go from 0° to 180° in 18° increments, which is unideal. So, I recalculated the PSC and ARR values so that we could have more servo positions, and found
+			 a set of values that give us roughly 75 discrete positions, which is much better than 10. To test this, I wrote some simple code that sweeps the servo arm between 0° and 180° continuously; this is demonstrated in Figure 12.
+			 Seprately, I ordered two ESCs with sensorless functionality that we should be able to use to drive our motorized rollers. We decided to go this route due to time constraints, as pulseroller's solution has the potential to take too long to get functioning. I have already recieved the ESCs, but I had forgotten to order the 4 pin female M8 connectors needed to connect to the motor,
+			  so I ordered some on amazon; they should be here on Saturday.
+            <br>
+			<br><center><iframe width="560" height="310" src ="Team/img/servoOscillate.mp4"></iframe></center></br>
+			<br>
+			<b>Figure 12: Oscillating Servo Demo</b>
+			<br>	
         </div>
 	
 		<!-- Instantiate global footer. Any changes to the footer should be made through the top-level file "footer.html" -->
