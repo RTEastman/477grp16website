@@ -185,7 +185,7 @@ contact course staff.
 			<b>Date:</b> 4/9/21<br>
 			<b>Total hours:</b> 12<br>
 			<b>Description of design efforts:</b>
-			I started this week by ensuring that we could controll the servos using level-shifted PWMs originating from the MCU. I succeeded and recorded a video of myself demonstrating said success, which can be found onn our Media page.
+			I started this week by ensuring that we could control the servos using level-shifted PWMs originating from the MCU. I succeeded and recorded a video of myself demonstrating said success, which can be found onn our Media page.
 			I noticed that the PWM resolution I selected only allowed for roughly 10 discrete servo positions, meaning you could only go from 0° to 180° in 18° increments, which is unideal. So, I recalculated the PSC and ARR values so that we could have more servo positions, and found
 			 a set of values that give us roughly 75 discrete positions, which is much better than 10. To test this, I wrote some simple code that sweeps the servo arm between 0° and 180° continuously; this is demonstrated in Figure 12.
 			 Seprately, I ordered two ESCs with sensorless functionality that we should be able to use to drive our motorized rollers. We decided to go this route due to time constraints, as pulseroller's solution has the potential to take too long to get functioning. I have already recieved the ESCs, but I had forgotten to order the 4 pin female M8 connectors needed to connect to the motor,
@@ -194,6 +194,20 @@ contact course staff.
 			<br><center><iframe width="560" height="310" src ="Team/img/servoOscillate.mp4"></iframe></center></br>
 			<br>
 			<b>Figure 12: Oscillating Servo Demo</b>
+			<br>	
+			<br>
+			<h4>Week 13:</h4>
+			<b>Date:</b> 4/16/21<br>
+			<b>Total hours:</b> 18<br>
+			<b>Description of design efforts:</b>
+			I started this week by going to a local electronics store to purchase a new soldering iron as well as necessary components needed to finish the PCB and overall electrical assembly of our system. With these components, I assembled most of the PCB, with the only unpopulated components being the led + button port as well as the I2C port. A demonstration of this PCB can be found on our Media page. 
+			After that, I worked on configuring our new ESCs through the VESC software in order to map the input PWM to a desired output. After partial success, I went over to Ryan's apartment to test an ESC on the conveyor belt to see if I was able to control it from the STM. After configuring the ESC, I was successfully able to control the conveyor belt by interfacing with the ESC through the STM. 
+			They say the proof is in the pudding, so here's my pudding (see Figure 13). To sweep the conveyor speed, I used the same exact code that I used to sweep the servo arm in the video on my progress report last week (see Figure 12). The ESC can be further configured and fine tuned if need be. Also, I had ordered the wrong connector gender for the motor, so I had to order another set. 
+			I received them Thursday, so I'll hopefully be able to install them properly by the next team meeting.
+            <br>
+			<br><center><iframe width="560" height="310" src ="Team/img/thePuddingESC.mp4"></iframe></center></br>
+			<br>
+			<b>Figure 13: STM Interfacing with ESC to Drive Motor (aka, "The Pudding™")</b>
 			<br>	
         </div>
 	
