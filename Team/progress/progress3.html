@@ -208,6 +208,21 @@ contact course staff.
 			<br><center><iframe width="560" height="310" src ="Team/img/thePuddingESC.mp4"></iframe></center></br>
 			<br>
 			<b>Figure 13: STM Interfacing with ESC to Drive Motor (aka, "The Pudding™")</b>
+			<br>
+			<br>
+			<h4>Week 14:</h4>
+			<b>Date:</b> 4/23/21<br>
+			<b>Total hours:</b> 12<br>
+			<b>Description of design efforts:</b>
+			I started this week by putting proper connectors on the ESCs' wires in order to make future troubleshooting and disasembly easier. I was, in fact, able to install the ESCs properly now, at least to the motors. Now, I just have to apply connectors to the power end of the ESCs. 
+			Seperately, I assisted Ryan in debugging the TOF sensor after Todd recommended getting a new one. The sensor would send back the correct distance data once, and then never again until we restarted the mcu. Ryan told me that Todd hypothesized that the sensor might not be communicating proper I2C, and thus he recommended a new sensor. 
+			I found it very hard to believe that that was the case; since we were getting accurate data from the first read, theres no reason the second and third read shouldn't be possible. So, I hopped into a call with Ryan to try one last ditch attempt at getting this to work. After looking at his I2C code, I realized that he was using the code he wrote for a 362 lab, meaning I had a slightly differennt version of the same code, which I then pulled up to show him. 
+			Let me preface our solution with how our problem happened in the first place: In Ryans code, he wrote to the registers by typing out the 1's and 0's, so it was hard to tell what the bits actually represented. My code, on the other hand, had the symbolic names of the bits in the register typed out, so you could see what you were (or weren't) writing to the registers. 
+			So, after about 10 minutes of comparing my code to his, he noticed something I was doing in my code that he wasn't sure he was doing in his, so he did it, and the sensor insantly worked perfectly. To be precisely specific, he forgot to clear I2C_CR2_RD_WRN in the I2C1_start function, and clearing it solved everything. 
+			Seperatly, another thing I did was prototype a sorting arm attachment for the servo arm and ran a very scientific test to see how much weight it could push. A video of this experiment can be found in the figure below.
+            <br>
+			<br><center><iframe width="560" height="310" src ="Team/img/servoArmWeightTest.mp4"></iframe></center></br>
+			<b>Figure 14: Prototype Sorting Arm Test</b>
 			<br>	
         </div>
 	
